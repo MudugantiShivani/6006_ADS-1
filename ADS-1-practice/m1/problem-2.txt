@@ -1,0 +1,1 @@
+The complexity of the quick union path compression is less compared to the remaining three. So this process is better as it saves time.
