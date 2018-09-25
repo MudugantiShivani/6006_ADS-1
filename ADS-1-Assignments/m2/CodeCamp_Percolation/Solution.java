@@ -10,6 +10,9 @@
 
 // You can implement the above API to solve the problem
 import java.util.Scanner;
+/**
+ * Class for percolation.
+ */
 class Percolation {
     /**
      * initializing array size.
@@ -31,6 +34,11 @@ class Percolation {
      * initializing size.
      */
     private int[] size;
+    /**
+     * Constructs the object.
+     *
+     * @param      count  The count
+     */
     Percolation(final int count) {
         arraySize = count;
         openNsize = 0;
@@ -43,6 +51,12 @@ class Percolation {
             size[i] = 1;
         }
     }
+    /**
+     * { function_description }.
+     *
+     * @param      row   The row
+     * @param      col   The col
+     */
     public void open(final int row, final int col) {
         grid[row - 1][col - 1] = 1;
         openNsize += 1;
@@ -63,21 +77,45 @@ class Percolation {
                 index(row - 1, col));
         }
     }
+    /**
+     * Determines if open.
+     *
+     * @param      row   The row
+     * @param      col   The col
+     *
+     * @return     True if open, False otherwise.
+     */
     public boolean isOpen(final int row, final int col) {
         if (grid[row - 1][col - 1] == 1) {
             return true;
         }
         return false;
     }
-    
+    /**
+     * { function_description }.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int numberOfOpenSites() {
         return openNsize;
     }
-    
+    /**
+     * { function_description }.
+     *
+     * @param      i     { parameter_description }
+     * @param      j     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int index(final int i, final int j) {
         return (i * arraySize) + j;
     }
-    
+    /**
+     * { function_description }.
+     *
+     * @param      p     { parameter_description }
+     * @param      q     The quarter
+     */
     public void union(final int p, final int q) {
         int rootP = find(p);
         int rootQ = find(q);
@@ -93,7 +131,13 @@ class Percolation {
             size[rootP] += size[rootQ];
         }
     }
-   
+   /**
+    * Searches for the first match.
+    *
+    * @param      p     { parameter_description }
+    *
+    * @return     { description_of_the_return_value }
+    */
     public int find(final int p) {
         int a = p;
         while (a != parent[a]) {
@@ -101,7 +145,11 @@ class Percolation {
         }
         return a;
     }
-    
+    /**
+     * { function_description }.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public boolean valididate() {
         if (openNsize > 0) {
             for (int i = (arraySize - 1)
@@ -118,7 +166,9 @@ class Percolation {
         return false;
     }
 }
-
+/**
+ * { item_description }.
+ */
 public final class Solution {
     /**
      * Constructs the object.
