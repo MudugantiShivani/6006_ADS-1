@@ -2,7 +2,13 @@ import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Collections;
+/**
+ * { solution class}.
+ */
 final class Solution {
+	/**
+	 * Constructs the object.
+	 */
     private Solution() {
 
     }
@@ -16,6 +22,11 @@ final class Solution {
         }
         return high;
 	}
+	/**
+	 * { main function }.
+	 *
+	 * @param      args  The arguments
+	 */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         int sizeA = sc.nextInt();
