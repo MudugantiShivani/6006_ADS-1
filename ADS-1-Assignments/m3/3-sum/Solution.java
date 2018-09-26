@@ -1,9 +1,20 @@
 import java.util.Scanner;
 import java.util.Arrays;
+/**
+ * { program to give number of sums which is zero for three numbers}.
+ */
 final class Solution {
+    /**
+     * Constructs the object.
+     */
     private Solution() {
 
     }
+    /**
+     * { main function }.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         int count =  Integer.parseInt(sc.nextLine());
@@ -15,7 +26,6 @@ final class Solution {
             list[i] = a;
         }
         Arrays.sort(list);
-        int pop = 0;
         for (int i = 0; i < count - 3; i++) {
             int j = i + 1;
             int k = count - 1;
