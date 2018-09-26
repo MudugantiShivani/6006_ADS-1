@@ -26,7 +26,8 @@ final class Solution {
             list[i] = a;
         }
         Arrays.sort(list);
-        for (int i = 0; i < count - 3; i++) {
+        int three = 3;
+        for (int i = 0; i < count - three; i++) {
             int j = i + 1;
             int k = count - 1;
             while (k > j) {
