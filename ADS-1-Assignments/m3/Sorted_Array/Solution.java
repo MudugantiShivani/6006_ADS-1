@@ -34,7 +34,7 @@ final class Solution {
                 System.out.print(high);
 
             } else {
-                System.out.print(high + " ");
+                System.out.print(high + ",");
             }
             ans1.remove(high);
         }
