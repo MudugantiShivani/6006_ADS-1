@@ -33,9 +33,9 @@ final class Solution {
             if (ans1.size() == 1) {
                 System.out.print(high);
 
-            }// else {
-            //     System.out.print(high + ",");
-            // }
+            } else {
+                System.out.print(high + " ");
+            }
             ans1.remove(high);
         }
 
