@@ -10,8 +10,18 @@ final class Solution {
 	 * Constructs the object.
 	 */
     private Solution() {
+    	/**
+    	 * { constructor }.
+    	 */
 
     }
+    /**
+     * { function for array}.
+     *
+     * @param      arr   The arr
+     *
+     * @return     { description_of_the_return_value }
+     */
     static String getlow(final List arr) {
         String high = "";
         high = "" + arr.get(0);
