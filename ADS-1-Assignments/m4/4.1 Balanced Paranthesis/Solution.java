@@ -11,7 +11,13 @@ class Stringstack {
      * Class for node.
      */
     private class Node {
+        /**
+         * { var_description }.
+         */
         private char item;
+        /**
+         * { var_description }.
+         */
         private Node nextAddress;
     }
     /**
@@ -99,14 +105,18 @@ public class Solution {
             if (ch == '(' || ch == '{' || ch == '[') {
                 obj.push(ch);
             } else {
-                if(obj.isEmpty()) return false;
+                if (obj.isEmpty()) {
+                    return false;
+                }
                 if (ch == ')' && obj.top() == '(') {
                 obj.pop();
             } else if (ch == '}' && obj.top() == '{') {
                 obj.pop();
             } else if (ch == ']' && obj.top() == '[') {
                 obj.pop();
-            } else return false;
+            } else {
+                return false;
+            }
         }
 
     }
