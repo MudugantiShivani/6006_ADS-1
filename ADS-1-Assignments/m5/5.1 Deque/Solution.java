@@ -82,11 +82,11 @@ class Deque {
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
-    Solution() {
+    private Solution() {
     }
     /**
      * {main function}.
