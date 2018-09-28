@@ -1,0 +1,11 @@
+What does the following code fragment do to the queue q?
+
+
+Stack stack = new Stack();
+while (!q.isEmpty())
+	stack.push(q.dequeue());
+while (!stack.isEmpty())
+	q.enqueue(stack.pop());
+
+This code is used to print revere of the elements in queue.
+First empty stack is created and then the queue is checked.If the queue is not empty then the elements in the queue are dequeued and pushed into the stack. This process is done till the queue is empty and then the elements from stack are shifted to queue. In this process the elements will be reversed
