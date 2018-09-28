@@ -1,26 +1,58 @@
 import java.util.Scanner;
+/**
+ * Class for deque.
+ */
 class Deque {
-    Operations queueObject;
+    /**
+     * { operation object}.
+     */
+    private Operations queueObject;
+    /**
+     * Constructs the object.
+     */
     Deque() {
         queueObject = new Operations();
     }
+    /**
+     * Determines if empty.
+     *
+     * @return     True if empty, False otherwise.
+     */
     public boolean isEmpty() {
         if (queueObject.size == 0) {
             return true;
         }
         return false;
     }
+    /**
+     * { returns the size }.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int size() {
         return queueObject.size;
     }
-    public void pushLeft(int item) {
+    /**
+     * Pushes a left.
+     *
+     * @param      item  The item
+     */
+    public void pushLeft(final int item) {
         queueObject.insertStart(item);
         print();
     }
-    public void pushRight(int item) {
+    /**
+     * Pushes a right.
+     *
+     * @param      item  The item
+     */
+    public void pushRight(final int item) {
         queueObject.insertEnd(item);
         print();
     }
+    /**
+     * { pops the element in the left}.
+     */
     public void popLeft() {
         if (queueObject.size == 0) {
             System.out.println("Deck is empty");
@@ -29,6 +61,9 @@ class Deque {
         queueObject.deleteStart();
         print();
     }
+    /**
+     * {pops the element from the right }.
+     */
     public void popRight() {
         if (queueObject.size == 0) {
             System.out.println("Deck is empty");
@@ -37,13 +72,27 @@ class Deque {
         queueObject.deleteEnd();
         print();
     }
+    /**
+     * { prints the list }.
+     */
     public void print() {
         System.out.println(queueObject.print());
     }
 }
+/**
+ * Class for solution.
+ */
 public class Solution {
+    /**
+     * Constructs the object.
+     */
     Solution() {
     }
+    /**
+     * {main function}.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         Deque obj = new Deque();
