@@ -61,7 +61,10 @@ public class Solution {
                     obj.pushLeft(Integer.parseInt(
                         tokens[1]));
                     break;
-                
+                case "pushRight":
+                    obj.pushRight(Integer.parseInt(
+                        tokens[1]));
+                    break;
                 case "popLeft":
                     obj.popLeft();
                     break;
