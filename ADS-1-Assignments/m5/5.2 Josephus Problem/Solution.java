@@ -1,14 +1,34 @@
 import java.util.Scanner;
+/**
+ * List of circulars.
+ */
 class CircularQueue {
+	/**
+	 * {object creation}.
+	 */
 	private Operations obj;
+	/**
+	 * Constructs the object.
+	 */
 	CircularQueue() {
 		obj = new Operations();
 	}
+	/**
+	 * { pushes the element}.
+	 *
+	 * @param      number  The number
+	 */
 	public void push(final int number) {
 		for (int i = 0; i < number; i++) {
 			obj.insertEnd(i);
 		}
 	}
+	/**
+	 * { pops the elements }.
+	 *
+	 * @param      number  The number
+	 * @param      length  The length
+	 */
 	public void pop(final int number, final int length) {
 		int[] arr = new int[length];
 		Node temp = obj.head;
@@ -33,9 +53,20 @@ class CircularQueue {
 		System.out.println(arr[length - 1]);
 	}
 }
+/**
+ * Class for solution.
+ */
 class Solution {
+	/**
+	 * Constructs the object.
+	 */
 	Solution() {
 	}
+	/**
+	 * { main function}.
+	 *
+	 * @param      args  The arguments
+	 */
 	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		CircularQueue obj = new CircularQueue();
