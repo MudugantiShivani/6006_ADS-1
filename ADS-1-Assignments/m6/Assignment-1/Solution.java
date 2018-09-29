@@ -29,7 +29,8 @@ class AddLargeNumbers {
             if (result < 10) {
             objct1.insertStart(result);
             } else {
-                int sum = carry + result;
+                int sum = 0;
+                sum = sum + carry;
                 result = sum%10;
                 carry = sum/10;
                 objct1.insertStart(result);
