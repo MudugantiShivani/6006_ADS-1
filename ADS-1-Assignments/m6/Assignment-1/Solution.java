@@ -23,7 +23,7 @@ class AddLargeNumbers {
     	objct1 = new LinkedList();
         int result = 0;
         while (list1.size != 0 && list2.size != 0) {
-            result += list1.deleteStart() + list2.deleteStart();
+            result = list1.deleteStart() + list2.deleteStart() + result;
         }
         return objct1;
     }
