@@ -22,9 +22,17 @@ class AddLargeNumbers {
     public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {
     	objct1 = new LinkedList();
         int result = 0;
+        int carry = 0;
         while (list1.size != 0 && list2.size != 0) {
             result = list1.deleteStart() + list2.deleteStart() + result;
-            objct1.insertStart((result));
+            //objct1.insertStart((result));
+            if (result < 10) {
+            objct1.insertStart(result);
+            } else {
+                carry = result%10;
+                objct1.insertStart(carry);
+                result = result / 10;
+            }
         }
         return objct1;
     }
