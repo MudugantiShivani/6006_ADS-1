@@ -30,10 +30,10 @@ class AddLargeNumbers {
             objct1.insertStart(result);
             } else {
                 int sum = 0;
-                result = result + carry;
-                result = result%10;
-                carry = result/10;
-                objct1.insertStart(result);
+                sum = result + carry;
+                result = sum%10;
+                carry = sum/10;
+                objct1.insertEnd(result);
             }
         }
         return objct1;
