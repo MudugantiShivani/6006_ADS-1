@@ -3,7 +3,13 @@ import java.util.Scanner;
  * Class for add large numbers.
  */
 class AddLargeNumbers {
+    /**
+     * { var_description }.
+     */
     private static LinkedList objct;
+    /**
+     * { var_description }.
+     */
     private  static LinkedList objct1;
     /**
      * { function_description }.
@@ -42,7 +48,8 @@ class AddLargeNumbers {
      *
      * @return     { description_of_the_return_value }
      */
-    public static LinkedList addLargeNumbers(final LinkedList list1, final LinkedList list2) {
+    public static LinkedList addLargeNumbers(final LinkedList list1,
+        final LinkedList list2) {
         objct1 = new LinkedList();
         int result = 0;
         int carry = 0;
@@ -68,7 +75,7 @@ public final  class Solution {
     /**
      * Constructs the object.
      */
-    private Solution(){
+    private Solution() {
 
     }
 
@@ -77,7 +84,7 @@ public final  class Solution {
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         String input = sc.nextLine();
         String p = sc.nextLine();
@@ -93,7 +100,8 @@ public final  class Solution {
         case "addLargeNumbers":
             pDigits = AddLargeNumbers.numberToDigits(p);
             qDigits = AddLargeNumbers.numberToDigits(q);
-            LinkedList result = AddLargeNumbers.addLargeNumbers(pDigits, qDigits);
+            LinkedList result = AddLargeNumbers.addLargeNumbers(pDigits,
+                qDigits);
             System.out.println(AddLargeNumbers.digitsToNumber(result));
             break;
         }
