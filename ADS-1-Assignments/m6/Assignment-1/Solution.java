@@ -13,7 +13,7 @@ class AddLargeNumbers {
     public static String digitsToNumber(final LinkedList list) {
     	String result = "";
         while (list.size != 0) {
-            result += list.deleteStart();
+            result = result + list.deleteStart();
         }
         return result;
     }
