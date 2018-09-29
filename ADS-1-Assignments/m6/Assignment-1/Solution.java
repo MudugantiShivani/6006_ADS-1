@@ -3,8 +3,8 @@ import java.util.Scanner;
  * Class for add large numbers.
  */
 class AddLargeNumbers {
-    static LinkedList objct;
-    static LinkedList objct1;
+    private static LinkedList objct;
+    private  static LinkedList objct1;
     /**
      * { function_description }.
      *
@@ -64,7 +64,19 @@ class AddLargeNumbers {
 /**
  * Class for solution.
  */
-public class Solution {
+public final  class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution(){
+
+    }
+
+    /**
+     * { function_description }.
+     *
+     * @param      args  The arguments
+     */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String input = sc.nextLine();
