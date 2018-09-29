@@ -32,7 +32,7 @@ class AddLargeNumbers {
                 result += carry;
                 carry = result/10;
                 result %= 10;
-                objct1.insertEnd(result);
+                objct1.insertStart(result);
             }
         }
         return objct1;
