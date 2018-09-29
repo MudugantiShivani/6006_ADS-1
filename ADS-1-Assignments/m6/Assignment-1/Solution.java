@@ -29,12 +29,9 @@ class AddLargeNumbers {
             if (result < 10) {
             objct1.insertStart(result);
             } else {
+                result+=carry;
                 carry = result/10;
-                result += carry;
-                result%=10;
-                
-                
-                
+                result = result%10;
                 objct1.insertStart(result);
             }
         }
