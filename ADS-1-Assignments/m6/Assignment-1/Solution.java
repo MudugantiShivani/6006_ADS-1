@@ -57,11 +57,12 @@ class AddLargeNumbers {
             result = list1.deleteStart() + list2.deleteStart() + result;
             //objct1.insertStart((result));
             int sum = 0;
+            final int ten = 10;
             sum = result + carry;
 
-            result = sum % 10;
+            result = sum % ten;
             objct1.insertStart(result);
-            carry = sum / 10;
+            carry = sum / ten;
 
         }
         //objct1.insertStart(result);
@@ -104,6 +105,7 @@ public final  class Solution {
                 qDigits);
             System.out.println(AddLargeNumbers.digitsToNumber(result));
             break;
+        default:
         }
     }
 
