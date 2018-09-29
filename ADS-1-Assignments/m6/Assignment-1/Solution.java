@@ -24,14 +24,15 @@ class AddLargeNumbers {
         int result = 0;
         int carry = 0;
         while (list1.size != 0 && list2.size != 0) {
-            result = list1.deleteEnd() + list2.deleteEnd() + result;
+            result = list1.deleteStart() + list2.deleteStart() + result;
             //objct1.insertStart((result));
             if (result < 10) {
             objct1.insertStart(result);
             } else {
                 int sum = 0;
-                sum = result + carry;
                 result = sum%10;
+                sum = result + carry;
+                
                 carry = sum/10;
                 objct1.insertStart(result);
             }
