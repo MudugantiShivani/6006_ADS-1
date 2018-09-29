@@ -16,11 +16,11 @@ class Node {
 		return data;
 	}
 }
-class LinkedList {
+class LinkedList{
 	Node head;
 	Node tail;
 	int size;
-	LinkedList() {
+ LinkedList() {
 		size = 0;
 	}
 
@@ -30,8 +30,8 @@ class LinkedList {
 			head = obj;
 			tail = obj;
 		} else {
-		obj.setAddress(head);
-		head = obj;
+			obj.setAddress(head);
+			head = obj;
 		}
 		size++;
 	}
@@ -41,8 +41,8 @@ class LinkedList {
 			head = obj;
 			tail = obj;
 		} else {
-		tail.setAddress(obj);
-		tail = obj;
+			tail.setAddress(obj);
+			tail = obj;
 		}
 		size++;
 	}
@@ -60,12 +60,15 @@ class LinkedList {
 			}
 		}
 	}
-	public void deleteStart() {
+	public int deleteStart() {
+		int data = head.data;
 		Node temp = head;
 		head = temp.next;
 		size--;
+		return data;
 	}
-	public void deleteEnd() {
+	public int deleteEnd() {
+		int data = head.data;
 		Node temp = head;
 		while (temp.next.next != null) {
 			temp = temp.getAddress();
@@ -73,20 +76,29 @@ class LinkedList {
 		tail = temp;
 		temp.next = null;
 		size--;
+		return data;
+	}
+	public void deleteAfter(int a) {
+		Node temp = head;
+		while (temp.data != a) {
+			temp = temp.next;
+		}
+		temp.setAddress(temp.getAddress().getAddress());
 	}
 	public String print() {
-		String str = "[";
+		String str = "";
 		Node temp = head;
 		if (size == 0) {
-			return "[]";
+			return " ";
 		}
 		if (size > 0) {
 			while (temp.next != null) {
-				str += temp.data + ", ";
+				str += temp.data;
 				temp = temp.getAddress();
+			}
+			str += temp.data;
 		}
-		str += temp.data + "]";
-	}
 		return str;
 	}
 }
+

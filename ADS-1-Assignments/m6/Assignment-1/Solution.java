@@ -11,11 +11,11 @@ class AddLargeNumbers {
     }
 
     public static String digitsToNumber(final LinkedList list) {
-    	// String str = "";
-     //    while (list.size != 0) {
-     //        str = str + list.deleteStart();
-     //    }
-        return null;
+    	String result = "";
+        while (list.size != 0) {
+            result += list.deleteStart();
+        }
+        return result;
     }
 
     public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {
