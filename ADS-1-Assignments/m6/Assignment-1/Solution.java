@@ -25,7 +25,7 @@ class AddLargeNumbers {
         int carry = 0;
         while (list1.size != 0 && list2.size != 0) {
             result = list1.deleteStart() + list2.deleteStart() + result;
-            objct1.insertStart((result));
+            //objct1.insertStart((result));
             if (result < 10) {
             objct1.insertStart(result);
             } else {
@@ -33,10 +33,10 @@ class AddLargeNumbers {
                 sum = result + carry;
                 result = sum%10;
                 carry = sum/10;
-                objct1.insertStart(result);
+                //objct1.insertStart(result);
             }
         }
-        // objct1.insertStart(result);
+        objct1.insertStart(result);
         return objct1;
     }
 }
