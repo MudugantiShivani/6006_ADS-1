@@ -1,0 +1,1 @@
+If the elements are in reverse order, then the selection sort  and insertion sort takes same time but selection sort has less number of swappings comapred to insertion sort.
