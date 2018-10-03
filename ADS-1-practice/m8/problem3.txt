@@ -1,0 +1,1 @@
+insertion sort runs faster if all the elements are identical because the outer loop runs N times but inner loop runs only for once. Selection sort has the time complexity of N^2 in any case.
