@@ -140,7 +140,7 @@ class Merge {
      * @return     True if sorted, False otherwise.
      */
     public boolean isSorted(final Comparable[] arr,
-        final int low, final int high) {
+                            final int low, final int high) {
         for (int i = low + 1; i <= high; i++) {
             if (less(arr[i], arr[i - 1])) {
                 return false;
@@ -173,6 +173,11 @@ public final class Solution {
      * Constructs the object.
      * Time complexity of this method is O(1).
      */
+    private Solution() {
+        /**
+         * constructor.
+         */
+    }
     /**
      * {Client Program}.
      *
