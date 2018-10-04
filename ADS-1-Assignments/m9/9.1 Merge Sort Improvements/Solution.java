@@ -23,7 +23,8 @@ class Merge {
      * @param      mid    The middle value
      * @param      high     The higher value
      */
-    public void merge(final Comparable[] array, final Comparable[] aux, int low, int mid,  int high) {
+    public void merge(final Comparable[] array, final Comparable[] aux,
+                      final int low, final int mid, final int high) {
         assert isSorted(array, low, mid);
         assert isSorted(array, mid + 1, high);
         int start = low;
@@ -49,7 +50,8 @@ class Merge {
      * @param      low     The lower value
      * @param      high     The higher value
      */
-    public void sort( Comparable[] array, Comparable[] aux,int low, int high) {
+    public void sort(final Comparable[] array, final Comparable[] aux,
+                     final int low, final int high) {
         if (high <= low + cutoff) {
             insertionSort(aux, low, high);
             System.out.println("Insertion sort method invoked...");
@@ -73,7 +75,7 @@ class Merge {
      * Time complexity of this method is O(N).
      * @param      array     {Comparable array}.
      */
-    public void sort( Comparable[] array) {
+    public void sort(final Comparable[] array) {
         Comparable[] aux = array.clone();
         sort(aux, array, 0, array.length - 1);
         assert isSorted(array);
@@ -86,7 +88,8 @@ class Merge {
      * @param      low   The lower value
      * @param      high    The higher value
      */
-    public void insertionSort(Comparable[] arr, int low, int high) {
+    public void insertionSort(final Comparable[] arr, final int low,
+                              final int high) {
         for (int i = low; i <= high; i++) {
             for (int j = i; j > low && less(arr[j], arr[j - 1]); j--) {
                 exchange(arr, j, j - 1);
@@ -100,8 +103,8 @@ class Merge {
      * @param      i     {Integer i}
      * @param      j     {Integer j}
      */
-    public void exchange( Comparable[] array,
-        final int i, final int j) {
+    public void exchange(final Comparable[] array,
+                         final int i, final int j) {
         Comparable swap = array[i];
         array[i] = array[j];
         array[j] = swap;
@@ -114,7 +117,7 @@ class Merge {
      *
      * @return     {Boolean value}.
      */
-    public boolean less(Comparable a,  Comparable b) {
+    public boolean less(final Comparable a, final Comparable b) {
         return a.compareTo(b) < 0;
     }
     /**
@@ -124,7 +127,7 @@ class Merge {
      *
      * @return     True if sorted, False otherwise.
      */
-    public boolean isSorted( Comparable[] arr) {
+    public boolean isSorted(final Comparable[] arr) {
         return isSorted(arr, 0, arr.length - 1);
     }
     /**
@@ -136,7 +139,8 @@ class Merge {
      *
      * @return     True if sorted, False otherwise.
      */
-    public boolean isSorted(Comparable[] arr, int low,  int high) {
+    public boolean isSorted(final Comparable[] arr,
+        final int low, final int high) {
         for (int i = low + 1; i <= high; i++) {
             if (less(arr[i], arr[i - 1])) {
                 return false;
@@ -151,7 +155,7 @@ class Merge {
      *
      * @return     {String}
      */
-    public String print( Comparable[] arr) {
+    public String print(final Comparable[] arr) {
         String str = "[";
         int i;
         for (i = 0; i < arr.length - 1; i++) {
@@ -174,7 +178,7 @@ public final class Solution {
      *
      * @param      args  The arguments
      */
-    public static void main( String[] args) {
+    public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         Merge obj = new Merge();
         while (scan.hasNext()) {
