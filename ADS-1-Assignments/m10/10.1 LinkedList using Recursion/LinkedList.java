@@ -1,4 +1,7 @@
 import java.util.*;
+/**
+ * Class for node.
+ */
 class Node {
     String data;
     Node next;
@@ -6,19 +9,35 @@ class Node {
         data = val;
     }
 }
+/**
+ * List of linkeds.
+ */
 class LinkedList{
-    Node start;
+    Node initial;
     int size;
     LinkedList(){
-        start = null;
+        initial = null;
         size = 0;
     }
+    /**
+     * { inserts element at node given}.
+     *
+     * @param      i     {node given}
+     */
     void insert(Node i){
         if(size == 0){
-            start = i;
+            initial = i;
             return;
         }
     }
+    /**
+     * { inserts at the given index and node }.
+     *
+     * @param      index      The index
+     * @param      n          { gives node place }
+     *
+     * @throws     Exception  { exception if it is empty }
+     */
     void insertAt(int index,Node n) throws Exception{
         if(index < 0 || index > size){
             throw new Exception("");
@@ -26,14 +45,24 @@ class LinkedList{
                     }
 
         if(index == 0){
-            n.next = start;
-            start = n;
+            n.next = initial;
+            initial = n;
             size++;
             return;
         }
-        start =insertAt(index, start,n,0);
+        initial =insertAt(index, initial,n,0);
 
     }
+    /**
+     * { inserts element at the index given and node}.
+     *
+     * @param      index    The index
+     * @param      first    The first
+     * @param      element  The element
+     * @param      count    The count
+     *
+     * @return     { returns the first element }
+     */
     Node insertAt(int index,Node first, Node element,int count ){
         if(count == index){
             element.next = first;
@@ -43,23 +72,37 @@ class LinkedList{
         size++;
         return first;
     }
+    /**
+     * {reverse the list}.
+     *
+     * @throws     Exception  { exception is raised}
+     */
     void reverse() throws Exception{
-        if(start == null){
+        if(initial == null){
             throw new Exception();
         }
-        reverse(null,start);
+        reverse(null,initial);
     }
+    /**
+     * { reverses the current and previous node}.
+     *
+     * @param      prev     The previous
+     * @param      current  The current
+     */
 void reverse( Node prev, Node current)
 {
    if(current!=null){
       reverse(current,current.next);
       current.next = prev;
     }else{
-        start = prev;
+        initial = prev;
     }
 }
+/**
+ * { displays the data }.
+ */
     void display(){
-        Node temp = start;
+        Node temp = initial;
         String str="";
         while(temp !=null){
             str += temp.data+", ";
