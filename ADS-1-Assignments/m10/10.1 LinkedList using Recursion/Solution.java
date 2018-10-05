@@ -3,20 +3,20 @@ import java.util.Scanner;
  * {solution class}.
  */
 final class Solution {
-	/**
-	 * Constructs the object.
-	 */
-	private Solution() {
-		/**
-		 * { empty constructor}.
-		 */
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+        /**
+         * { empty constructor}.
+         */
 
-	}
-	/**
-	 * { main class for solution}.
-	 *
-	 * @param      args  The arguments
-	 */
+    }
+    /**
+     * { main class for solution}.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         LinkedList linkobj = new LinkedList();
@@ -47,5 +47,6 @@ final class Solution {
         }
     }
 }
+
 
 

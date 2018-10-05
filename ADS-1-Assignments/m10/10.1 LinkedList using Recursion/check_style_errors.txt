@@ -1,4 +1,2 @@
 Starting audit...
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m10\10.1 LinkedList using Recursion\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 Audit done.
-Checkstyle ends with 1 errors.
