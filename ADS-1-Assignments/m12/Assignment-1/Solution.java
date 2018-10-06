@@ -96,7 +96,7 @@ class addingData{
                     return 1;
                 } else  {
                 	if (name1.getAge() < name2.getAge()) {
-                		return 1;
+                		return -1;
                 	}
                 }
             }
