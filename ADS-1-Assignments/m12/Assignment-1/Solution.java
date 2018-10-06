@@ -133,18 +133,19 @@ class addingData{
   				vacancies--;
   		}
   		 for (int i = count; i < list.size()  && vacancies > 0; i++) {
+  		 	if (list.get(i).getCategory().equals("ST") && STseats > 0) {
+  				alloted.add(list.get(i));
+  				STseats--;
+  				count++;
+  				vacancies--;
+  			}
   		 	if (list.get(i).getCategory().equals("BC") && BCseats > 0) {
   				alloted.add(list.get(i));
   				BCseats--;
   				count++;
   				vacancies--;
   			}
-  			if (list.get(i).getCategory().equals("ST") && STseats > 0) {
-  				alloted.add(list.get(i));
-  				STseats--;
-  				count++;
-  				vacancies--;
-  			}
+  			
   			if (list.get(i).getCategory().equals("SC") && SCseats > 0 ) {
   				alloted.add(list.get(i));
   				SCseats--;
