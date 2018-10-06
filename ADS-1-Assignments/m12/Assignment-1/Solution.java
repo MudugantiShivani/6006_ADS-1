@@ -80,20 +80,20 @@ class addingData{
 	}
     public int compareTo(
         final Student name1, final Student name2) {
-        if (name1.getTotal() < name2.getTotal()) {
-            return  -1;
-        } else if (name1.getTotal() > name2.getTotal()) {
-            return 1;
+        if (name1.getTotal() > name2.getTotal()) {
+            return  1;
+        } else if (name1.getTotal() < name2.getTotal()) {
+            return -1;
         } else {
-            if (name1.getS3() < name2.getS3()) {
-                return -1;
-            } else if (name1.getS3() > name2.getS3()) {
+            if (name1.getS3() > name2.getS3()) {
                 return 1;
+            } else if (name1.getS3() < name2.getS3()) {
+                return -1;
             } else {
-                if (name1.getS2() < name2.getS2()) {
-                    return -1;
-                } else if (name1.getS2() > name2.getS2()) {
+                if (name1.getS2() > name2.getS2()) {
                     return 1;
+                } else if (name1.getS2() < name2.getS2()) {
+                    return -1;
                 } else  {
                 	if (name1.getAge() < name2.getAge()) {
                 		return -1;
