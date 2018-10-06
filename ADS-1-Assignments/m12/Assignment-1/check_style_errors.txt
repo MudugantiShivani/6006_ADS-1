@@ -1,16 +1,4 @@
 Starting audit...
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m12\Assignment-1\Solution.java:82:8: Unused @param tag for 'birth'. [JavadocMethod]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m12\Assignment-1\Solution.java:83:8: Unused @param tag for 's1'. [JavadocMethod]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m12\Assignment-1\Solution.java:84:8: Unused @param tag for 's2'. [JavadocMethod]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m12\Assignment-1\Solution.java:85:8: Unused @param tag for 's3'. [JavadocMethod]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m12\Assignment-1\Solution.java:86:8: Unused @param tag for 'total'. [JavadocMethod]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m12\Assignment-1\Solution.java:87:8: Unused @param tag for 'category'. [JavadocMethod]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m12\Assignment-1\Solution.java:90:26: Expected @param tag for 'birth1'. [JavadocMethod]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m12\Assignment-1\Solution.java:90:47: Expected @param tag for 'sub1'. [JavadocMethod]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m12\Assignment-1\Solution.java:90:66: Expected @param tag for 'sub2'. [JavadocMethod]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m12\Assignment-1\Solution.java:91:26: Expected @param tag for 'sub3'. [JavadocMethod]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m12\Assignment-1\Solution.java:91:45: Expected @param tag for 'total1'. [JavadocMethod]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m12\Assignment-1\Solution.java:91:66: Expected @param tag for 'category1'. [JavadocMethod]
 [ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m12\Assignment-1\Solution.java:250:27: Parameter vacancies should be final. [FinalParameters]
 [ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m12\Assignment-1\Solution.java:250:42: Parameter opencategorySeats should be final. [FinalParameters]
 [ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m12\Assignment-1\Solution.java:250:65: Parameter bcSeats should be final. [FinalParameters]
@@ -19,4 +7,4 @@ Starting audit...
 [ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m12\Assignment-1\Solution.java:254: Line is longer than 80 characters (found 89). [LineLength]
 [ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m12\Assignment-1\Solution.java:284: Line is longer than 80 characters (found 82). [LineLength]
 Audit done.
-Checkstyle ends with 19 errors.
+Checkstyle ends with 7 errors.

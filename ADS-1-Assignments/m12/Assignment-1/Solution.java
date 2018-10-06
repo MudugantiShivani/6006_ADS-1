@@ -79,12 +79,12 @@ class Student {
      * Constructs the object.
      *
      * @param      student   The student
-     * @param      birth     The birth
-     * @param      s1        The s 1
-     * @param      s2        The s 2
-     * @param      s3        The s 3
-     * @param      total     The total
-     * @param      category  The category
+     * @param      birth1     The birth
+     * @param      sub1        The s 1
+     * @param      sub2        The s 2
+     * @param      sub3        The s 3
+     * @param      total1     The total
+     * @param      category1  The category
      */
     Student(final String student,
             final String birth1, final String sub1, final String sub2,
