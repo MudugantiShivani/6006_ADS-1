@@ -62,11 +62,12 @@ Starting audit...
 [ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m12\Assignment-1\Solution.java:126:99: Name 'STseats' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
 [ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m12\Assignment-1\Solution.java:129: Line is longer than 80 characters (found 97). [LineLength]
 [ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m12\Assignment-1\Solution.java:136: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m12\Assignment-1\Solution.java:142: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m12\Assignment-1\Solution.java:148: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m12\Assignment-1\Solution.java:149: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m12\Assignment-1\Solution.java:149:82: ')' is preceded with whitespace. [ParenPad]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m12\Assignment-1\Solution.java:156:57: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m12\Assignment-1\Solution.java:157: Line is longer than 80 characters (found 132). [LineLength]
+[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m12\Assignment-1\Solution.java:142: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m12\Assignment-1\Solution.java:142:82: ')' is preceded with whitespace. [ParenPad]
+[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m12\Assignment-1\Solution.java:148: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m12\Assignment-1\Solution.java:154: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m12\Assignment-1\Solution.java:155: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m12\Assignment-1\Solution.java:157:57: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m12\Assignment-1\Solution.java:158: Line is longer than 80 characters (found 132). [LineLength]
 Audit done.
-Checkstyle ends with 69 errors.
+Checkstyle ends with 70 errors.

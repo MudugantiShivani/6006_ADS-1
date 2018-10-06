@@ -139,6 +139,12 @@ class addingData{
   				count++;
   				vacancies--;
   			}
+  			if (list.get(i).getCategory().equals("SC") && SCseats > 0 ) {
+  				alloted.add(list.get(i));
+  				SCseats--;
+  				count++;
+  				vacancies--;
+  			}
   		 	if (list.get(i).getCategory().equals("BC") && BCseats > 0) {
   				alloted.add(list.get(i));
   				BCseats--;
@@ -146,12 +152,7 @@ class addingData{
   				vacancies--;
   			}
   			
-  			if (list.get(i).getCategory().equals("SC") && SCseats > 0 ) {
-  				alloted.add(list.get(i));
-  				SCseats--;
-  				count++;
-  				vacancies--;
-  			}
+  			
   		}
   		for (int i = 0; i < alloted.size(); i++){
   		System.out.println(alloted.get(i).getName() + "," + alloted.get(i).getTotal() + "," + alloted.get(i).getCategory());
