@@ -64,6 +64,11 @@ class Student{
 	public String getCategory() {
 		return this.category;
 	}
+	public int getAge() {
+		String[] age = this.birth.split("-");
+		int month = Integer.parseInt(age[1]);
+		return month;
+	}
 }
 class addingData{
 	private ArrayList<Student> list;
@@ -89,6 +94,10 @@ class addingData{
                     return -1;
                 } else if (name1.getS2() > name2.getS2()) {
                     return 1;
+                } else  {
+                	if (name1.getAge() > name2.getAge()) {
+                		return 1;
+                	}
                 }
             }
         }
