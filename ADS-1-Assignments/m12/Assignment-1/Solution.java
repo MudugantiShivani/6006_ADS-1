@@ -39,7 +39,8 @@ final class Solution {
         }
         object.sorting();
         object.print();
-        object.seatallot(vacancies, opencategorySeats, bcSeats, scSeats, stSeats);
+        object.seatallot(vacancies, opencategorySeats, bcSeats, scSeats,
+            stSeats);
     }
 }
 /**
@@ -86,15 +87,15 @@ class Student {
      * @param      category  The category
      */
     Student(final String student,
-            final String birth, final String s1, final String s2,
-            final String s3, final String total, final String category) {
+            final String birth1, final String sub1, final String sub2,
+            final String sub3, final String total1, final String category1) {
              this.name = student;
-             this.birth = birth;
-             this.s1 = Integer.parseInt(s1);
-             this.s2 = Integer.parseInt(s2);
-             this.s3 = Integer.parseInt(s3);
-             this.total = Integer.parseInt(total);
-             this.category = category;
+             this.birth = birth1;
+             this.s1 = Integer.parseInt(sub1);
+             this.s2 = Integer.parseInt(sub2);
+             this.s3 = Integer.parseInt(sub3);
+             this.total = Integer.parseInt(total1);
+             this.category = category1;
     }
     /**
      * Gets the name.
@@ -232,8 +233,8 @@ class Addingdata {
      */
     public void print() {
         for (int i = 0; i < list.size(); i++) {
-            System.out.println(list.get(i).getName() + "," +
-                list.get(i).getTotal() + "," + list.get(i).getCategory());
+            System.out.println(list.get(i).getName() + ","
+                + list.get(i).getTotal() + "," + list.get(i).getCategory());
         }
         System.out.println();
     }
@@ -279,8 +280,8 @@ class Addingdata {
 
         }
         for (int i = 0; i < alloted.size(); i++) {
-            System.out.println(alloted.get(i).getName() + "," +
-                alloted.get(i).getTotal() + "," + alloted.get(i).getCategory());
+            System.out.println(alloted.get(i).getName() + ","
+                + alloted.get(i).getTotal() + "," + alloted.get(i).getCategory());
         }
     }
 }
