@@ -18,7 +18,7 @@ final class Solution {
     public static void main(final String[] args) {
         Student obj;
         Scanner scan = new Scanner(System.in);
-        addingData object = new addingData();
+        Addingdata object = new Addingdata();
         int totalQualified = scan.nextInt();
         int vacancies = scan.nextInt();
         int opencategorySeats = scan.nextInt();
@@ -88,13 +88,13 @@ class Student {
     Student(final String student,
             final String birth, final String s1, final String s2,
             final String s3, final String total, final String category) {
-        this.name = student;
-        this.birth = birth;
-        this.s1 = Integer.parseInt(s1);
-        this.s2 = Integer.parseInt(s2);
-        this.s3 = Integer.parseInt(s3);
-        this.total = Integer.parseInt(total);
-        this.category = category;
+             this.name = student;
+             this.birth = birth;
+             this.s1 = Integer.parseInt(s1);
+             this.s2 = Integer.parseInt(s2);
+             this.s3 = Integer.parseInt(s3);
+             this.total = Integer.parseInt(total);
+             this.category = category;
     }
     /**
      * Gets the name.
@@ -158,12 +158,15 @@ class Student {
 /**
  * Class for adding data.
  */
-class addingData {
+class Addingdata {
+    /**
+     * { initialising array list}.
+     */
     private ArrayList<Student> list;
     /**
      * Constructs the object.
      */
-    addingData() {
+    Addingdata() {
         list = new ArrayList<Student>();
     }
     /**
@@ -229,7 +232,8 @@ class addingData {
      */
     public void print() {
         for (int i = 0; i < list.size(); i++) {
-            System.out.println(list.get(i).getName() + "," + list.get(i).getTotal() + "," + list.get(i).getCategory());
+            System.out.println(list.get(i).getName() + "," +
+                list.get(i).getTotal() + "," + list.get(i).getCategory());
         }
         System.out.println();
     }
@@ -242,7 +246,8 @@ class addingData {
      * @param      scSeats            The s cseats
      * @param      stSeats            The s tseats
      */
-    public void seatallot(int vacancies, int opencategorySeats, int bcSeats, int scSeats, int stSeats) {
+    public void seatallot(int vacancies, int opencategorySeats, int bcSeats,
+        int scSeats, int stSeats) {
         ArrayList<Student> alloted = new ArrayList<Student>();
         int count = 0;
         for (int i = 0; i < list.size() && opencategorySeats > 0 && vacancies > 0; i++) {
@@ -258,7 +263,7 @@ class addingData {
                 count++;
                 vacancies--;
             }
-            if (list.get(i).getCategory().equals("SC") && scSeats > 0 ) {
+            if (list.get(i).getCategory().equals("SC") && scSeats > 0) {
                 alloted.add(list.get(i));
                 scSeats--;
                 count++;
@@ -274,7 +279,8 @@ class addingData {
 
         }
         for (int i = 0; i < alloted.size(); i++) {
-            System.out.println(alloted.get(i).getName() + "," + alloted.get(i).getTotal() + "," + alloted.get(i).getCategory());
+            System.out.println(alloted.get(i).getName() + "," +
+                alloted.get(i).getTotal() + "," + alloted.get(i).getCategory());
         }
     }
 }
