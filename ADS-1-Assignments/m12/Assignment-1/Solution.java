@@ -1,15 +1,14 @@
 import java.util.Scanner;
 import java.util.Collections;
-import java.util.Arrays;
 import java.util.ArrayList;
 /**
  * Class for solution.
  */
-class Solution {
+final class Solution {
     /**
      * Constructs the object.
      */
-    Solution() {
+    private Solution() {
     }
     /**
      * { main function}.
@@ -23,31 +22,57 @@ class Solution {
         int totalQualified = scan.nextInt();
         int vacancies = scan.nextInt();
         int opencategorySeats = scan.nextInt();
-        int BCseats = scan.nextInt();
-        int SCseats = scan.nextInt();
-        int STseats = scan.nextInt();
+        int bcSeats = scan.nextInt();
+        int scSeats = scan.nextInt();
+        int stSeats = scan.nextInt();
         scan.nextLine();
         for (int i = 0; i < totalQualified; i++) {
             String line  =  scan.nextLine();
             String[] tokens = line.split(",");
-            obj = new Student(tokens[0], tokens[1], tokens[2], tokens[3], tokens[4], tokens[5], tokens[6]);
+            final int three = 3;
+            final int four = 4;
+            final int five = 5;
+            final int six = 6;
+            obj = new Student(tokens[0], tokens[1], tokens[2],
+                tokens[three], tokens[four], tokens[five], tokens[six]);
             object.addData(obj);
         }
         object.sorting();
         object.print();
-        object.seatallot(vacancies, opencategorySeats, BCseats, SCseats, STseats);
+        object.seatallot(vacancies, opencategorySeats, bcSeats, scSeats, stSeats);
     }
 }
 /**
  * Class for student.
  */
 class Student {
+    /**
+     * { name of the student}.
+     */
     private String name;
+    /**
+     * { date of birth }.
+     */
     private String birth;
+    /**
+     * { subject one marks }.
+     */
     private int s1;
+    /**
+     * { subject two marks }.
+     */
     private int s2;
+    /**
+     * { subject three marks }.
+     */
     private int s3;
+    /**
+     * { total marks }.
+     */
     private int total;
+    /**
+     * { category of the student }.
+     */
     private String category;
     /**
      * Constructs the object.
@@ -61,7 +86,8 @@ class Student {
      * @param      category  The category
      */
     Student(final String student,
-            final String birth, final String s1, final String s2, final String s3, final String total, final String category) {
+            final String birth, final String s1, final String s2,
+            final String s3, final String total, final String category) {
         this.name = student;
         this.birth = birth;
         this.s1 = Integer.parseInt(s1);
@@ -212,11 +238,11 @@ class addingData {
      *
      * @param      vacancies          The vacancies
      * @param      opencategorySeats  The opencategory seats
-     * @param      BCseats            The b cseats
-     * @param      SCseats            The s cseats
-     * @param      STseats            The s tseats
+     * @param      bcSeats            The b cseats
+     * @param      scSeats            The s cseats
+     * @param      stSeats            The s tseats
      */
-    public void seatallot(int vacancies, int opencategorySeats, int BCseats, int SCseats, int STseats) {
+    public void seatallot(int vacancies, int opencategorySeats, int bcSeats, int scSeats, int stSeats) {
         ArrayList<Student> alloted = new ArrayList<Student>();
         int count = 0;
         for (int i = 0; i < list.size() && opencategorySeats > 0 && vacancies > 0; i++) {
@@ -226,21 +252,21 @@ class addingData {
             vacancies--;
         }
         for (int i = count; i < list.size()  && vacancies > 0; i++) {
-            if (list.get(i).getCategory().equals("ST") && STseats > 0) {
+            if (list.get(i).getCategory().equals("ST") && stSeats > 0) {
                 alloted.add(list.get(i));
-                STseats--;
+                stSeats--;
                 count++;
                 vacancies--;
             }
-            if (list.get(i).getCategory().equals("SC") && SCseats > 0 ) {
+            if (list.get(i).getCategory().equals("SC") && scSeats > 0 ) {
                 alloted.add(list.get(i));
-                SCseats--;
+                scSeats--;
                 count++;
                 vacancies--;
             }
-            if (list.get(i).getCategory().equals("BC") && BCseats > 0) {
+            if (list.get(i).getCategory().equals("BC") && bcSeats > 0) {
                 alloted.add(list.get(i));
-                BCseats--;
+                bcSeats--;
                 count++;
                 vacancies--;
             }
