@@ -3,6 +3,9 @@ import java.util.Scanner;
  * Class for quick.
  */
 class Quick {
+    /**
+     * { cutoff variable }.
+     */
     private int cutoff;
     /**
      * Constructs the object.
