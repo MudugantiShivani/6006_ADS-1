@@ -1,0 +1,16 @@
+Starting audit...
+[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:2: Missing a Javadoc comment. [JavadocType]
+[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:3:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:4:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:7:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:11:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:17:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:25:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:36:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:61:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:71: Missing a Javadoc comment. [JavadocType]
+[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:72:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:74:5: Missing a Javadoc comment. [JavadocMethod]
+Audit done.
+Checkstyle ends with 13 errors.
