@@ -13,6 +13,7 @@ final class Solution {
                 int index1 = 0;
                 for (int index = 1; index <= array.length; index++) {
                     strArr[index] = array[index1];
+                    index++;
                 }
                 System.out.println(checkObj.check(strArr));
             }

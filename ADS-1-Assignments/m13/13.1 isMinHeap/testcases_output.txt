@@ -5,10 +5,9 @@ false
 true
 false
 Your Output: 
-true
-true
-true
-true
+Exception in thread "main" java.lang.NullPointerException
+	at MinPQ.check(Solution.java:67)
+	at Solution.main(Solution.java:18)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -19,12 +18,9 @@ false
 false
 false
 Your Output: 
-true
-true
-true
-true
-true
-true
+Exception in thread "main" java.lang.NullPointerException
+	at MinPQ.check(Solution.java:67)
+	at Solution.main(Solution.java:18)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
