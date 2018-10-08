@@ -37,6 +37,7 @@ final class Solution {
                 int index1 = 0;
                 for (int index = 1; index <= array.length; index++) {
                     doubleArr[index] = Double.parseDouble(array[index1]);
+                    index1++;
                 }
                 System.out.println(checkObj.check(doubleArr));
             }
