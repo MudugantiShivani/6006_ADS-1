@@ -1,0 +1,4 @@
+the array which is sorted in ascending order is a minimum
+heap because for a min- heap the first index is with the
+minimum element of complete array. so if we follow the
+level order in heap we will get the minimum oriented heap.
