@@ -3,23 +3,24 @@ import java.util.Scanner;
  * { main class solution }.
  */
 final class Solution {
-	/**
-	 * Constructs the object.
-	 */
-	private Solution() {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
 
-	}
-	/**
-	 * { main function }.
-	 *
-	 * @param      args  The arguments
-	 */
-	/**here the orderof time complexity in the main method is O(N);
-	*/
-	public static void main(final String[] args) {
-		/**
-		 * { Scanner object to scan the input }.
-		 */
+    }
+    /**here the orderof time complexity in the main method is O(N).
+    */
+    /**
+     * { main function }.
+     *
+     * @param      args  The arguments
+     */
+    
+    public static void main(final String[] args) {
+        /**
+         * { Scanner object to scan the input }.
+         */
         Scanner scan = new Scanner(System.in);
         String dataType = scan.nextLine();
         int noOfTestCases = Integer.parseInt(scan.nextLine());
@@ -93,13 +94,13 @@ final class Solution {
  * @param      <E>   { generic variable}
  */
 class MinPQ<E extends Comparable<E>> {
-	/**
-	 * {boolean function}.
-	 *
-	 * @param      arr   The arr
-	 *
-	 * @return     { returns the element boolean value }
-	 */
+    /**
+     * {boolean function}.
+     *
+     * @param      arr   The arr
+     *
+     * @return     { returns the element boolean value }
+     */
     public boolean check(final E[] arr) {
         int len = arr.length;
         for (int index = len - 1; index > 1; index--) {
