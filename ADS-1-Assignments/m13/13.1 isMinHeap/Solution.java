@@ -25,6 +25,7 @@ final class Solution {
                 int index1 = 0;
                 for (int index = 1; index <= array.length; index++) {
                     intArr[index] = Integer.parseInt(array[index1]);
+                    index1++;
                 }
                 System.out.println(checkObj.check(intArr));
             }
