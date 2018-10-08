@@ -1,10 +1,7 @@
 Starting audit...
 [ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m13\13.1 isMinHeap\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m13\13.1 isMinHeap\Solution.java:2: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m13\13.1 isMinHeap\Solution.java:2:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m13\13.1 isMinHeap\Solution.java:3:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m13\13.1 isMinHeap\Solution.java:3:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m13\13.1 isMinHeap\Solution.java:66: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m13\13.1 isMinHeap\Solution.java:67:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m13\13.1 isMinHeap\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m13\13.1 isMinHeap\Solution.java:17: First sentence should end with a period. [JavadocStyle]
+[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m13\13.1 isMinHeap\Solution.java:19:48: Expected @param tag for 'args'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 4 errors.
