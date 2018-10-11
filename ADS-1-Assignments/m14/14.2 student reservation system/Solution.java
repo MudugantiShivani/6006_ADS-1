@@ -245,6 +245,20 @@ class Addingdata {
             Collections.swap(list, i, max);
         }
     }
+    public void sorting(final ArrayList<Student> list1) {
+        int max = 0;
+        int flag = 0;
+        for (int i = 0; i < list1.size(); i++) {
+            max = i;
+            for (int j = i + 1; j < list1.size(); j++) {
+                flag = compareTo(list1.get(max), list1.get(j));
+                if (flag == -1) {
+                    max = j;
+                }
+            }
+            Collections.swap(list1, i, max);
+        }
+    }
     /**
      * { prints the output }.
      */
