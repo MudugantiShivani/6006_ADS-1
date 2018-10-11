@@ -1,101 +1,60 @@
 import java.util.Scanner;
-import java.util.Collections;
 import java.util.ArrayList;
+import java.util.Collections;
 /**
- * Class for solution.
- */
-final class Solution {
-    /**
-     * Constructs the object.
-     */
-    private Solution() {
-    }
-    /**
-     * { main function}.
-     *
-     * @param      args  The arguments
-     */
-    public static void main(final String[] args) {
-        Student obj;
-        Scanner scan = new Scanner(System.in);
-        Addingdata object = new Addingdata();
-        int totalQualified = scan.nextInt();
-        int vacancies = scan.nextInt();
-        int opencategorySeats = scan.nextInt();
-        int bcSeats = scan.nextInt();
-        int scSeats = scan.nextInt();
-        int stSeats = scan.nextInt();
-        scan.nextLine();
-        for (int i = 0; i < totalQualified; i++) {
-            String line  =  scan.nextLine();
-            String[] tokens = line.split(",");
-            final int three = 3;
-            final int four = 4;
-            final int five = 5;
-            final int six = 6;
-            obj = new Student(tokens[0], tokens[1], tokens[2],
-                tokens[three], tokens[four], tokens[five], tokens[six]);
-            object.addData(obj);
-        }
-        object.sorting();
-        object.print();
-        object.seatallot(vacancies, opencategorySeats, bcSeats, scSeats,
-            stSeats);
-    }
-}
-/**
- * Class for student.
+ *this class stores the student info.
  */
 class Student {
     /**
-     * { name of the student}.
+     *name of the student.
      */
     private String name;
     /**
-     * { date of birth }.
+     *DOB of the student.
      */
     private String birth;
     /**
-     * { subject one marks }.
+     *mark1 of the student.
      */
-    private int s1;
+    private int sub1;
     /**
-     * { subject two marks }.
+     *mark2 of the student.
      */
-    private int s2;
+    private int sub2;
     /**
-     * { subject three marks }.
+     *mark3 of the student.
      */
-    private int s3;
+    private int sub3;
     /**
-     * { total marks }.
+     *total marks.
      */
     private int total;
     /**
-     * { category of the student }.
+     *category of the student.
      */
     private String category;
     /**
-     * Constructs the object.
+     * to initialize the data od student.
      *
      * @param      student   The student
-     * @param      birth1     The birth
-     * @param      sub1        The s 1
-     * @param      sub2        The s 2
-     * @param      sub3        The s 3
-     * @param      total1     The total
-     * @param      category1  The category
+     * @param      dob     The birth
+     * @param      s1    The sub one
+     * @param      s2    The sub two
+     * @param      s3  The sub three
+     * @param      tot     The total
+     * @param      categorie  The category
      */
     Student(final String student,
-            final String birth1, final String sub1, final String sub2,
-            final String sub3, final String total1, final String category1) {
-             this.name = student;
-             this.birth = birth1;
-             this.s1 = Integer.parseInt(sub1);
-             this.s2 = Integer.parseInt(sub2);
-             this.s3 = Integer.parseInt(sub3);
-             this.total = Integer.parseInt(total1);
-             this.category = category1;
+            final String dob, final String s1,
+            final String s2, final String s3,
+            final String tot, final String categorie) {
+        this.name = student;
+        this.birth = dob;
+        this.sub1 = Integer.parseInt(s1);
+        this.sub2 = Integer.parseInt(s2);
+        this.sub3 = Integer.parseInt(s3);
+        this.total = Integer.parseInt(tot);
+        this.category = categorie;
     }
     /**
      * Gets the name.
@@ -106,28 +65,28 @@ class Student {
         return this.name;
     }
     /**
-     * Gets the s 1.
+     * Gets the subone marks.
      *
-     * @return     The s 1.
+     * @return     The sub o ne.
      */
-    public int getS1() {
-        return this.s1;
+    public int getSubOne() {
+        return this.sub1;
     }
     /**
-     * Gets the s 2.
+     * Gets the sub two marks.
      *
-     * @return     The s 2.
+     * @return     The sub two.
      */
-    public int getS2() {
-        return this.s2;
+    public int getSubTwo() {
+        return this.sub2;
     }
     /**
-     * Gets the s 3.
+     * Gets the sub three marks.
      *
-     * @return     The s 3.
+     * @return     The sub three.
      */
-    public int getS3() {
-        return this.s3;
+    public int getSubThree() {
+        return this.sub3;
     }
     /**
      * Gets the total.
@@ -155,6 +114,11 @@ class Student {
         int month = Integer.parseInt(age[1]);
         return month;
     }
+    /**
+     * Gets the age.
+     *
+     * @return  year.
+     */
     public int getYear() {
         String[] age = this.birth.split("-");
         int year = Integer.parseInt(age[2]);
@@ -162,51 +126,62 @@ class Student {
     }
 }
 /**
- * Class for adding data.
+ * Class for Studentdetails.
  */
-class Addingdata {
+class Studentdetails {
     /**
-     * { initialising array list}.
+     * arraylist of objects to store.
+     * all students as objects.
      */
     private ArrayList<Student> list;
     /**
-     * Constructs the object.
+     * to initialize the object.
      */
-    Addingdata() {
+    Studentdetails() {
         list = new ArrayList<Student>();
     }
     /**
-     * Adds a data.
+     *to add the object.
      *
      * @param      obj   The object
+     * is student here.
      */
     public void addData(final Student obj) {
         list.add(obj);
     }
     /**
-     * { compares the object }.
+     * this method compares in the descending.
+     * order of merit for two students
      *
-     * @param      name1  The name 1
-     * @param      name2  The name 2
+     * @param      name1  The student one
+     * @param      name2  The student two
      *
-     * @return     { description_of_the_return_value }
+     * @return if it is lesser returns -1
+     * or else 1
      */
     public int compareTo(
-        final Student name1, final Student name2) {
-        if (name1.getTotal() > name2.getTotal()) {
-            return  1;
-        } else if (name1.getTotal() < name2.getTotal()) {
-            return -1;
+        final Student name1,
+        final Student name2) {
+        if (name1.getTotal()
+                < name2.getTotal()) {
+            return  -1;
+        } else if (name1.getTotal()
+                   > name2.getTotal()) {
+            return 1;
         } else {
-            if (name1.getS3() > name2.getS3()) {
-                return 1;
-            } else if (name1.getS3() < name2.getS3()) {
+            if (name1.getSubThree()
+                    < name2.getSubThree()) {
                 return -1;
+            } else if (name1.getSubThree()
+                       > name2.getSubThree()) {
+                return 1;
             } else {
-                if (name1.getS2() > name2.getS2()) {
-                    return 1;
-                } else if (name1.getS2() < name2.getS2()) {
+                if (name1.getSubTwo()
+                        < name2.getSubTwo()) {
                     return -1;
+                } else if (name1.getSubTwo()
+                           > name2.getSubTwo()) {
+                    return 1;
                 } else {
                     if (name1.getYear()
                      > name2.getYear()) {
@@ -229,7 +204,8 @@ class Addingdata {
         return 0;
     }
     /**
-     * { sorts the elements}.
+     *the method is to sort the objects.The time complexity will be N^2/ 2
+     *because every time it iterates throughout the array.
      */
     public void sorting() {
         int max = 0;
@@ -245,6 +221,11 @@ class Addingdata {
             Collections.swap(list, i, max);
         }
     }
+    /**
+     *the method is to sort the objects.The time complexity will be N^2/ 2
+     *because every time it iterates throughout the array.
+     *@param list1 of alloted seats.
+     */
     public void sorting(final ArrayList<Student> list1) {
         int max = 0;
         int flag = 0;
@@ -260,55 +241,66 @@ class Addingdata {
         }
     }
     /**
-     * { prints the output }.
+     *it prints the arrayList.
      */
     public void print() {
         for (int i = 0; i < list.size(); i++) {
-            System.out.println(list.get(i).getName() + ","
-                + list.get(i).getTotal() + "," + list.get(i).getCategory());
+            System.out.println(list.get(i).getName()
+                               + "," + list.get(i).getTotal()
+                               + "," + list.get(i).getCategory());
         }
         System.out.println();
     }
     /**
-     * { tells the alloted seats}.
+     * the method is for allotment of candidates.
      *
-     * @param      vacancies          The vacancies
-     * @param      opencategorySeats  The opencategory seats
-     * @param      bcSeats            The b cseats
-     * @param      scSeats            The s cseats
-     * @param      stSeats            The s tseats
+     * @param      vac  The vacancies
+     * @param      openS  The open seats
+     * @param      bcS    The bc seats
+     * @param      scS    The screen seats
+     * @param      stS    The st seats
      */
-    public void seatallot(int vacancies, int opencategorySeats, int bcSeats,
-        int scSeats, int stSeats) {
-        ArrayList<Student> alloted = new ArrayList<Student>();
+    public void allotment(final int vac,
+                          final int openS, final int bcS,
+                          final int scS, final int stS) {
+        int vacancies = vac;
+        int openSeats = openS;
+        int bcSeats = bcS;
+        int scSeats = scS;
+        int stSeats = stS;
+        ArrayList<Student> alloted
+            = new ArrayList<Student>();
         int count = 0;
-        for (int i = 0; i < list.size() && opencategorySeats > 0 && vacancies > 0; i++) {
+        for (int i = 0; i < list.size()
+                && openSeats > 0 && vacancies > 0; i++) {
             alloted.add(list.get(i));
-            opencategorySeats--;
+            openSeats--;
             count++;
             vacancies--;
         }
-        for (int i = count; i < list.size()  && vacancies > 0; i++) {
-            if (list.get(i).getCategory().equals("ST") && stSeats > 0) {
-                alloted.add(list.get(i));
-                stSeats--;
-                count++;
-                vacancies--;
-            }
-            if (list.get(i).getCategory().equals("SC") && scSeats > 0) {
-                alloted.add(list.get(i));
-                scSeats--;
-                count++;
-                vacancies--;
-            }
-            if (list.get(i).getCategory().equals("BC") && bcSeats > 0) {
+        for (int i = count; i < list.size()
+                && vacancies > 0; i++) {
+            if (list.get(i).getCategory().equals("BC")
+                    && bcSeats > 0) {
                 alloted.add(list.get(i));
                 bcSeats--;
                 count++;
                 vacancies--;
             }
-
-
+            if (list.get(i).getCategory().equals("ST")
+                    && stSeats > 0) {
+                alloted.add(list.get(i));
+                stSeats--;
+                count++;
+                vacancies--;
+            }
+            if (list.get(i).getCategory().equals("SC")
+                    && scSeats > 0) {
+                alloted.add(list.get(i));
+                scSeats--;
+                count++;
+                vacancies--;
+            }
         }
         int reserved = bcSeats + scSeats + stSeats;
         for (int i = 0; i < list.size(); i++) {
@@ -321,9 +313,55 @@ class Addingdata {
                 }
             }
         }
+        sorting(alloted);
         for (int i = 0; i < alloted.size(); i++) {
-            System.out.println(alloted.get(i).getName() + ","
-                + alloted.get(i).getTotal() + "," + alloted.get(i).getCategory());
+            System.out.println(alloted.get(i).getName()
+                               + "," + alloted.get(i).getTotal() + ","
+                               + alloted.get(i).getCategory());
         }
+    }
+}
+/**
+ *this the class for main.
+ */
+final class Solution {
+    /**
+     *empty constructor.
+     */
+    private Solution() {
+    }
+    /**
+     * the main to read the input.
+     *
+     * @param  args  The arguments
+     */
+    public static void main(final String[] args) {
+        Student obj;
+        final int three = 3;
+        final int four = 4;
+        final int five = 5;
+        final int six = 6;
+        Scanner scan = new Scanner(System.in);
+        Studentdetails object = new Studentdetails();
+        int totalQualified = scan.nextInt();
+        int vacancies = scan.nextInt();
+        int openSeats = scan.nextInt();
+        int bcSeats = scan.nextInt();
+        int scSeats = scan.nextInt();
+        int stSeats = scan.nextInt();
+        scan.nextLine();
+        for (int i = 0; i < totalQualified; i++) {
+            String line  =  scan.nextLine();
+            String[] tokens = line.split(",");
+            obj = new Student(
+                tokens[0], tokens[1], tokens[2],
+                tokens[three], tokens[four],
+                tokens[five], tokens[six]);
+            object.addData(obj);
+        }
+        object.sorting();
+        object.print();
+        object.allotment(vacancies,
+                         openSeats, bcSeats, scSeats, stSeats);
     }
 }

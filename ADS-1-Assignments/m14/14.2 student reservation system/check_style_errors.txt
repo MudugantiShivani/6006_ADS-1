@@ -1,12 +1,4 @@
 Starting audit...
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m14\14.2 student reservation system\Solution.java:158:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m14\14.2 student reservation system\Solution.java:248:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m14\14.2 student reservation system\Solution.java:281:27: Parameter vacancies should be final. [FinalParameters]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m14\14.2 student reservation system\Solution.java:281:42: Parameter opencategorySeats should be final. [FinalParameters]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m14\14.2 student reservation system\Solution.java:281:65: Parameter bcSeats should be final. [FinalParameters]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m14\14.2 student reservation system\Solution.java:282:9: Parameter scSeats should be final. [FinalParameters]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m14\14.2 student reservation system\Solution.java:282:22: Parameter stSeats should be final. [FinalParameters]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m14\14.2 student reservation system\Solution.java:285: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m14\14.2 student reservation system\Solution.java:326: Line is longer than 80 characters (found 82). [LineLength]
+[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m14\14.2 student reservation system\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 9 errors.
+Checkstyle ends with 1 errors.
