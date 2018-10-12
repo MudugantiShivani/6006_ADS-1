@@ -1,39 +1,102 @@
 import java.util.Scanner;
+/**
+ * Class for dynamic median.
+ */
 class DynamicMedian {
+    /**
+     * { object to access minheap }.
+     */
     private MinPQ<Double> minObj;
+    /**
+     * { object to access maxheap }.
+     */
     private MaxPQ<Double> maxObj;
+    /**
+     * Constructs the object.
+     */
     DynamicMedian() {
         minObj = new MinPQ<Double>();
         maxObj = new MaxPQ<Double>();
     }
+    /**
+     * { insertion of element at min heap}.
+     *
+     * @param      item  The item
+     */
     public void insertAtMin(final double item) {
         minObj.insert(item);
     }
+    /**
+     * { insertion of element at maxheap}.
+     *
+     * @param      item  The item
+     */
     public void insertAtMax(final double item) {
         maxObj.insert(item);
     }
+    /**
+     * Gets the minimum from min heap
+     *
+     * @return     The minimum.
+     */
     public double getMin() {
         return minObj.min();
     }
+    /**
+     * Gets the maximum.
+     *
+     * @return     The maximum.
+     */
     public double getMax() {
         return maxObj.max();
     }
+    /**
+     * { deletes minimum element from max heap }.
+     *
+     * @return     { minimum value }
+     */
     public double delMax() {
         return maxObj.delMax();
     }
+    /**
+     * { deletes maximum from min heap }.
+     *
+     * @return     { maximum element }
+     */
     public double delMin() {
         return minObj.delMin();
     }
+    /**
+     * Gets the minimum size.
+     *
+     * @return     The minimum size.
+     */
     public int getMinSize() {
         return minObj.size();
     }
+    /**
+     * Gets the maximum size.
+     *
+     * @return     The maximum size.
+     */
     public int getMaxSize() {
         return maxObj.size();
     }
 }
+/**
+ * { main class }.
+ */
 final class Solution {
+    /**
+     * Constructs the object.
+     */
     private Solution() {
     }
+    /**
+     * { main class }.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         DynamicMedian obj = new DynamicMedian();

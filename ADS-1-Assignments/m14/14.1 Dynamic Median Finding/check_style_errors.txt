@@ -1,19 +1,5 @@
 Starting audit...
 [ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m14\14.1 Dynamic Median Finding\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m14\14.1 Dynamic Median Finding\Solution.java:2: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m14\14.1 Dynamic Median Finding\Solution.java:3:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m14\14.1 Dynamic Median Finding\Solution.java:4:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m14\14.1 Dynamic Median Finding\Solution.java:5:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m14\14.1 Dynamic Median Finding\Solution.java:9:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m14\14.1 Dynamic Median Finding\Solution.java:12:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m14\14.1 Dynamic Median Finding\Solution.java:15:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m14\14.1 Dynamic Median Finding\Solution.java:18:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m14\14.1 Dynamic Median Finding\Solution.java:21:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m14\14.1 Dynamic Median Finding\Solution.java:24:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m14\14.1 Dynamic Median Finding\Solution.java:27:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m14\14.1 Dynamic Median Finding\Solution.java:30:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m14\14.1 Dynamic Median Finding\Solution.java:34: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m14\14.1 Dynamic Median Finding\Solution.java:35:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m14\14.1 Dynamic Median Finding\Solution.java:37:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m14\14.1 Dynamic Median Finding\Solution.java:37: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 16 errors.
+Checkstyle ends with 2 errors.
