@@ -35,7 +35,7 @@ class DynamicMedian {
         maxObj.insert(item);
     }
     /**
-     * Gets the minimum from min heap
+     * Gets the minimum from min heap.
      *
      * @return     The minimum.
      */
