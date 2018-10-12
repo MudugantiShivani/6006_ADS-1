@@ -94,6 +94,8 @@ final class Solution {
     }
     /**
      * { main class }.
+     * The time complexity is O(N)
+     * N is the number of inputs
      *
      * @param      args  The arguments
      */
