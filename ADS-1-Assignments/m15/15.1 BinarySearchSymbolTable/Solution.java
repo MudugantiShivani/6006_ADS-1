@@ -7,9 +7,9 @@ import java.util.Scanner;
  * @param      <Values>  The values
  */
 class BinarySearchST<Keys extends Comparable<Keys>, Values> {
-	/**
-	 * {array to store keys}.
-	 */
+    /**
+     * {array to store keys}.
+     */
     private Keys[] keys;
     /**
      * {array to store to values}.
@@ -23,8 +23,9 @@ class BinarySearchST<Keys extends Comparable<Keys>, Values> {
      * Constructs the object.
      */
     BinarySearchST() {
-        keys = (Keys[]) new Comparable[10];
-        values = (Values[]) new Comparable[10];
+        final int ten = 10;
+        keys = (Keys[]) new Comparable[ten];
+        values = (Values[]) new Comparable[ten];
         size = 0;
     }
     /**
@@ -230,9 +231,9 @@ class BinarySearchST<Keys extends Comparable<Keys>, Values> {
  * {main class}.
  */
 final class Solution {
-	/**
-	 * Constructs the object.
-	 */
+    /**
+     * Constructs the object.
+     */
     private Solution() {
 
     }
