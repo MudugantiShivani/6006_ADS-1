@@ -182,14 +182,14 @@ final class Solution {
             switch (tokens[0]) {
             case "put":
                 obj.put(new Book(tokens[1], tokens[2], Double.parseDouble(
-                                     tokens[2+1])),
-                        Integer.parseInt(tokens[2+2]));
+                                     tokens[2 + 1])),
+                        Integer.parseInt(tokens[2 + 2]));
                 break;
             case "get":
                 System.out.println(obj.get(new Book(
                                                tokens[1], tokens[2],
                                                Double.parseDouble(
-                                                   tokens[2+1]))));
+                                                   tokens[2 + 1]))));
                 break;
             default:
                 break;

@@ -1,9 +1,2 @@
 Starting audit...
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m16\16.1 BST\Solution.java:185:46: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m16\16.1 BST\Solution.java:185:47: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m16\16.1 BST\Solution.java:186:50: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m16\16.1 BST\Solution.java:186:51: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m16\16.1 BST\Solution.java:192:60: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m16\16.1 BST\Solution.java:192:61: '+' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 6 errors.
