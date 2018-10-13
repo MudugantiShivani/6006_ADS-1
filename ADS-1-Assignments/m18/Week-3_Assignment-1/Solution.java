@@ -8,7 +8,7 @@ class Solution{
 		int numberof_hours = 6;
 		scan.nextLine();
 		while(numberof_hours > 0){
-			StockOrder obj = new StockOrder();
+			StockExchange obj = new StockExchange();
 			for(int i = 0; i < range; i++) {
 				String line = scan.nextLine();
 				String[] tokens = line.split(",");
@@ -17,13 +17,13 @@ class Solution{
 			obj.print();
 			numberof_hours--;
 		}
-		int next = scan.nextInt();
+		int nextL = scan.nextInt();
 	}
 }
-class StockOrder{
+class StockExchange{
 	BST<Double, String> maxObj;
 	BST<Double, String> minObj;
-	StockOrder(){
+	StockExchange(){
 		maxObj = new BST<Double, String>();
 		minObj = new BST<Double, String>();
 	}
