@@ -1,4 +1,25 @@
 import java.util.Scanner;
+class Solution{
+	Solution(){
+	}
+	public static void main(final String[] args) {
+		Scanner scan = new Scanner(System.in);
+		StockExchange obj = new StockExchange();
+		int range = scan.nextInt();
+		int numberOfhours = 6;
+		scan.nextLine();
+		while(numberOfhours > 0){
+			for(int i = 0; i < range; i++) {
+				String line = scan.nextLine();
+				String[] tokens = line.split(",");
+				obj.put(tokens[0], tokens[1]);
+			}
+			obj.print();
+			numberOfhours--;
+		}
+		int next = scan.nextInt();
+	}
+}
 class StockExchange {
 	BST<Double, String> MaxObj;
 	BST<Double, String> MinObj;
@@ -25,26 +46,5 @@ class StockExchange {
 			System.out.println(nameMax + " "+ tempMax);
 		}
 		System.out.println();
-	}
-}
-class Solution{
-	Solution(){
-	}
-	public static void main(final String[] args) {
-		Scanner scan = new Scanner(System.in);
-		StockExchange obj = new StockExchange();
-		int range = scan.nextInt();
-		int numberOfhours = 6;
-		scan.nextLine();
-		while(numberOfhours > 6){
-			for(int i = 0; i <= range; i++) {
-				String line = scan.nextLine();
-				String[] tokens = line.split(",");
-				obj.put(tokens[0], tokens[1]);
-			}
-			obj.print();
-			numberOfhours--;
-		}
-		int next = scan.nextInt();
 	}
 }
