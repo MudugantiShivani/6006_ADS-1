@@ -36,7 +36,7 @@ class Solution{
 		int range = scan.nextInt();
 		int numberOfhours = 6;
 		scan.nextLine();
-		while(numberOfhours > 0){
+		while(numberOfhours > 6){
 			for(int i = 0; i <= range; i++) {
 				String line = scan.nextLine();
 				String[] tokens = line.split(",");
@@ -45,6 +45,6 @@ class Solution{
 			obj.print();
 			numberOfhours--;
 		}
-		int queries = scan.nextInt();
+		int next = scan.nextInt();
 	}
 }
