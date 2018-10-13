@@ -88,7 +88,7 @@ Honeywell Auto -1.08
 TTK Prestige 0.15
 WABCO India 0.33
 Eicher Motors 0.6
-Lakshmi Machine 0.7
+GSK Cons Health 0.84
 
 Merck Ltd 5.83
 Bajaj Finserv 5.64
@@ -116,27 +116,27 @@ HEG Ltd -1.61
 
 Merck Ltd 4.83
 MRF 3.48
-HEG Ltd 2.61
-Schaeffler India 2.57
 3M India 2.56
+Bosch -0.3
+Abbott India -0.46
 
-Eicher Motors -1.6
-Nestle India -1.57
-WABCO India -1.33
-Tasty Bite Eat -1.23
-Sanofi India -1.21
+Bosch 0.3
+Abbott India 0.46
+MRF 0.48
+Oracle Fin 0.52
+Bajaj Finserv 0.64
 
 Merck Ltd 4.83
 ICRA 2.84
 Schaeffler India 2.57
-Bosch 2.3
-Tasty Bite Eat 2.23
+TTK Prestige 2.15
+Bharat Rasayan 2.0
 
 Eicher Motors -1.6
 Honeywell Auto -1.08
-GSK Cons Health -0.84
-Lakshmi Machine -0.7
-Bajaj Finserv -0.64
+Sanofi India 0.21
+Tasty Bite Eat 0.23
+WABCO India 0.33
 
 ICRA 5.84
 Lakshmi Machine 4.7
@@ -233,8 +233,8 @@ Chola Inv Fin 1.47
 Ceat -0.06
 Endurance Technologies Ltd. 1.1
 Fine Organic Industries Ltd. 1.29
-Chola Inv Fin 1.47
 APL Apollo Tube 2.18
+Chola Inv Fin 2.47
 
 Jubilant Food 4.08
 NIIT Tech 3.21
@@ -252,7 +252,7 @@ Chola Inv Fin 4.47
 Jubilant Food 4.08
 Vinati Organics 4.03
 Fine Organic Industries Ltd. 3.29
-Fine Organic Industries Ltd. 1.29
+Larsen & Toubro 1.11
 
 Larsen & Toubro -4.11
 Nalwa Sons Invst -0.1
@@ -264,7 +264,7 @@ Chola Inv Fin 3.47
 Fine Organic Industries Ltd. 3.29
 APL Apollo Tube 2.18
 Ceat 1.23
-Larsen & Toubro 1.11
+Vinati Organics 1.03
 
 Nalwa Sons Invst -2.06
 Fine Organic Industries Ltd. 0.29
@@ -282,7 +282,7 @@ Ceat -1.23
 NIIT Tech 0.21
 Fine Organic Industries Ltd. 0.29
 Vinati Organics 1.03
-Larsen & Toubro 1.11
+Chola Inv Fin 1.47
 
 Larsen & Toubro 5.11
 Jubilant Food 5.08
@@ -385,7 +385,7 @@ Honeywell Auto -1.08
 TTK Prestige 0.15
 WABCO India 0.33
 Eicher Motors 0.6
-Lakshmi Machine 0.7
+GSK Cons Health 0.84
 
 Merck Ltd 5.83
 Bajaj Finserv 5.64
@@ -413,27 +413,27 @@ HEG Ltd -1.61
 
 Merck Ltd 4.83
 MRF 3.48
-HEG Ltd 2.61
-Schaeffler India 2.57
 3M India 2.56
+Bosch -0.3
+Abbott India -0.46
 
-Eicher Motors -1.6
-Nestle India -1.57
-WABCO India -1.33
-Tasty Bite Eat -1.23
-Sanofi India -1.21
+Bosch 0.3
+Abbott India 0.46
+MRF 0.48
+Oracle Fin 0.52
+Bajaj Finserv 0.64
 
 Merck Ltd 4.83
 ICRA 2.84
 Schaeffler India 2.57
-Bosch 2.3
-Tasty Bite Eat 2.23
+TTK Prestige 2.15
+Bharat Rasayan 2.0
 
 Eicher Motors -1.6
 Honeywell Auto -1.08
-GSK Cons Health -0.84
-Lakshmi Machine -0.7
-Bajaj Finserv -0.64
+Sanofi India 0.21
+Tasty Bite Eat 0.23
+WABCO India 0.33
 
 ICRA 5.84
 Lakshmi Machine 4.7
@@ -535,8 +535,8 @@ Chola Inv Fin 1.47
 Ceat -0.06
 Endurance Technologies Ltd. 1.1
 Fine Organic Industries Ltd. 1.29
-Chola Inv Fin 1.47
 APL Apollo Tube 2.18
+Chola Inv Fin 2.47
 
 Jubilant Food 4.08
 NIIT Tech 3.21
@@ -554,7 +554,7 @@ Chola Inv Fin 4.47
 Jubilant Food 4.08
 Vinati Organics 4.03
 Fine Organic Industries Ltd. 3.29
-Fine Organic Industries Ltd. 1.29
+Larsen & Toubro 1.11
 
 Larsen & Toubro -4.11
 Nalwa Sons Invst -0.1
@@ -566,7 +566,7 @@ Chola Inv Fin 3.47
 Fine Organic Industries Ltd. 3.29
 APL Apollo Tube 2.18
 Ceat 1.23
-Larsen & Toubro 1.11
+Vinati Organics 1.03
 
 Nalwa Sons Invst -2.06
 Fine Organic Industries Ltd. 0.29
@@ -584,7 +584,7 @@ Ceat -1.23
 NIIT Tech 0.21
 Fine Organic Industries Ltd. 0.29
 Vinati Organics 1.03
-Larsen & Toubro 1.11
+Chola Inv Fin 1.47
 
 Larsen & Toubro 5.11
 Jubilant Food 5.08
@@ -720,7 +720,7 @@ Tasty Bite Eat 5.23
 Nestle India 4.57
 ICRA 3.84
 Lakshmi Machine 3.7
-3M India 2.56
+Bosch 2.3
 
 ICRA -2.84
 Schaeffler India -2.57
@@ -731,14 +731,14 @@ HEG Ltd -1.61
 Merck Ltd 4.83
 MRF 3.48
 3M India 2.56
-Bosch 2.3
-Tasty Bite Eat 2.23
+Bosch -0.3
+Abbott India -0.46
 
-Eicher Motors -1.6
-Nestle India -1.57
-3M India -1.56
-WABCO India -1.33
-Tasty Bite Eat -1.23
+Bosch 0.3
+Abbott India 0.46
+MRF 0.48
+Oracle Fin 0.52
+Bajaj Finserv 0.64
 
 Merck Ltd 4.83
 ICRA 2.84
@@ -747,10 +747,10 @@ TTK Prestige 2.15
 Bharat Rasayan 2.0
 
 Eicher Motors -1.6
-Sanofi India -1.21
 Honeywell Auto -1.08
-GSK Cons Health -0.84
-Lakshmi Machine -0.7
+Sanofi India 0.21
+Tasty Bite Eat 0.23
+WABCO India 0.33
 
 ICRA 5.84
 Lakshmi Machine 4.7
