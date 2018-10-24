@@ -1,0 +1,6 @@
+The floor is Q
+Select of 5 gives the output as M
+Ceil is also Q
+The rank of J is 3
+Size of D and T is 4
+The keys of D and T are D, E, J, Q, S, T.
