@@ -1,0 +1,3 @@
+As the time complexity for sequential search is N.
+The time complexity for binary search symbol table is logN
+so its better to prefer the binary search.
