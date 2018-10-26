@@ -1,4 +1,2 @@
 Starting audit...
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m22\22.1 Ransom Note\Solution.java:92: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 1 errors.

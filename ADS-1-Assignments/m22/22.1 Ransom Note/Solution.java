@@ -89,7 +89,7 @@ class HashTable {
         st = Arrays.copyOf(st, 2 * s);
     }
     /**
-     *In the insertion method here, the time complexity will be 
+     *In the insertion method here, the time complexity will be
      *in the O(log(N)) in the worst case and constant time in other cases.
      */
     /**
