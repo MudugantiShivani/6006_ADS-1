@@ -1,25 +1,5 @@
 Starting audit...
 [ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m22\22.1 Ransom Note\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m22\22.1 Ransom Note\Solution.java:3: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m22\22.1 Ransom Note\Solution.java:4: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m22\22.1 Ransom Note\Solution.java:5:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m22\22.1 Ransom Note\Solution.java:6:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m22\22.1 Ransom Note\Solution.java:7:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m22\22.1 Ransom Note\Solution.java:8:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m22\22.1 Ransom Note\Solution.java:13:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m22\22.1 Ransom Note\Solution.java:16:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m22\22.1 Ransom Note\Solution.java:19:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m22\22.1 Ransom Note\Solution.java:23:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m22\22.1 Ransom Note\Solution.java:24:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m22\22.1 Ransom Note\Solution.java:24:21: '100' is a magic number. [MagicNumber]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m22\22.1 Ransom Note\Solution.java:25:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m22\22.1 Ransom Note\Solution.java:28:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m22\22.1 Ransom Note\Solution.java:29:32: '0x7fffffff' is a magic number. [MagicNumber]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m22\22.1 Ransom Note\Solution.java:31:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m22\22.1 Ransom Note\Solution.java:34:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m22\22.1 Ransom Note\Solution.java:47:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m22\22.1 Ransom Note\Solution.java:61: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m22\22.1 Ransom Note\Solution.java:61:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m22\22.1 Ransom Note\Solution.java:62:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m22\22.1 Ransom Note\Solution.java:82:32: '0x7fffffff' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 22 errors.
+Checkstyle ends with 2 errors.
