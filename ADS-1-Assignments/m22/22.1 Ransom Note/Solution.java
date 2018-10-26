@@ -89,14 +89,14 @@ class HashTable {
         st = Arrays.copyOf(st, 2 * s);
     }
     /**
+     *In the insertion method here, the time complexity will be 
+     *in the O(log(N)) in the worst case and constant time in other cases.
+     */
+    /**
      * { puts the value in hash table}.
      *
      * @param      k     {string}
      * @param      v     {count}
-     */
-    /**
-     *In the insertion method here, the time complexity will be 
-     *in the O(log(N)) in the worst case and constant time in other cases.
      */
     public void put(final String k, final Integer v) {
         int i = hash(k);
@@ -112,16 +112,16 @@ class HashTable {
         st[i] = new Node(k, v, st[i]);
     }
     /**
+     *In the search method , the time complexity will be
+     *in the order of the log(N) in the worst cases and constant
+     *time in avereage and worst cases.
+     */
+    /**
      * {returns the boolean value based on the condition}.
      *
      * @param      k     {word}
      *
      * @return     {boolean value}
-     */
-    /**
-     *In the search method , the time complexity will be
-     *in the order of the log(N) in the worst cases and constant
-     *time in avereage and worst cases.
      */
     public boolean get(final String k) {
         int i = hash(k);
