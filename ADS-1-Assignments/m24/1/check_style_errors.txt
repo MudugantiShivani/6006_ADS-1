@@ -1,8 +1,4 @@
 Starting audit...
 [ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m24\1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m24\1\Solution.java:2: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m24\1\Solution.java:3:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m24\1\Solution.java:5:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m24\1\Solution.java:8: Line is longer than 80 characters (found 94). [LineLength]
 Audit done.
-Checkstyle ends with 5 errors.
+Checkstyle ends with 1 errors.

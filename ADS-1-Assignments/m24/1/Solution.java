@@ -1,11 +1,25 @@
 import java.util.Scanner;
+/**
+ * { class for Solution where we use the files Queue and Linear probing
+ * hashing tree to insert and search the elements in constatnt time}.
+ */
 public final class Solution {
+    /**
+     * Constructs the object.
+     */
     private Solution() {
     }
+    /**
+     * { main class for the solution where we create objects for the files
+     * we used and search the elements in constant time}.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int a = Integer.parseInt(scan.nextLine());
-        LinearProbingHashST<Integer, String> lph = new LinearProbingHashST<Integer, String>();
+        LinearProbingHashST<Integer, String> lph =
+        new LinearProbingHashST<Integer, String>();
         for (int i = 0; i < a; i++) {
             String[] tokens = scan.nextLine().split(",");
             String str = tokens[1] + "," + tokens[2];
