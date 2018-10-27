@@ -1,20 +1,8 @@
 Starting audit...
 [ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m24\1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m24\1\Solution.java:2: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m24\1\Solution.java:3:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m24\1\Solution.java:3:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m24\1\Solution.java:5:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m24\1\Solution.java:5:33: Parameter args should be final. [FinalParameters]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m24\1\Solution.java:7:21: Name 'N' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m24\1\Solution.java:8: Line is longer than 80 characters (found 102). [LineLength]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m24\1\Solution.java:9:34: '<' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m24\1\Solution.java:9:35: '<' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m24\1\Solution.java:14:21: Name 'P' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m24\1\Solution.java:15:34: '<' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m24\1\Solution.java:15:35: '<' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m24\1\Solution.java:23: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m24\1\Solution.java:24: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m24\1\Solution.java:25:23: 'else' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m24\1\Solution.java:25:23: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m24\1\Solution.java:3:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m24\1\Solution.java:5:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\ADS-1\6006_ADS-1\ADS-1-Assignments\m24\1\Solution.java:8: Line is longer than 80 characters (found 94). [LineLength]
 Audit done.
-Checkstyle ends with 17 errors.
+Checkstyle ends with 5 errors.
