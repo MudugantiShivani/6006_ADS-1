@@ -1,7 +1,7 @@
 import java.util.Scanner;
 /**
  * { class for Solution where we use the files Queue and Linear probing
- * hashing tree to insert and search the elements in constatnt time}.
+ * hashing tree to insert and search the elements in constant time}.
  */
 public final class Solution {
     /**
