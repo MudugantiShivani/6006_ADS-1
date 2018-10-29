@@ -13,6 +13,9 @@
 
     }
     /**
+     * {here the time complexity for hashing is constant time}.
+     */
+    /**
      * Main function.
      * @param args String.
      */
